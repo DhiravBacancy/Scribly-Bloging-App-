@@ -185,3 +185,94 @@ body {
     margin-bottom: 20px;
     font-size: 14px;
 }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .login-container {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 992px) {
+    .login-container {
+        max-width: 400px;
+    }
+
+    .login-header h1 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .login-container {
+        padding: 30px;
+    }
+
+    .login-header h1 {
+        font-size: 24px;
+    }
+
+    .form-group input {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .login-button {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding: 10px;
+    }
+
+    .login-container {
+        padding: 20px;
+    }
+
+    .login-header h1 {
+        font-size: 22px;
+    }
+
+    .login-header p {
+        font-size: 13px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+    }
+
+    .form-group input {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .remember-forgot {
+        font-size: 13px;
+    }
+
+    .login-button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .social-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .register-link {
+        font-size: 13px;
+    }
+}

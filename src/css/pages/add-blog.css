@@ -388,5 +388,94 @@
         }
       }
   
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .main-container {
+        width: 800px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-container {
+        width: 700px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.95rem;
+        padding: 10px 12px;
+    }
+
+    .image-upload-box {
+        padding: 15px;
+    }
+
+    .upload-icon {
+        font-size: 30px;
+    }
+
+    .upload-label p {
+        font-size: 13px;
+    }
+
+    .preview-image {
+        max-height: 180px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-container {
+        padding: 0 15px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+
+    .image-upload-box {
+        padding: 12px;
+    }
+
+    .upload-icon {
+        font-size: 26px;
+    }
+
+    .upload-label p {
+        font-size: 12px;
+    }
+
+    .preview-image {
+        max-height: 150px;
+    }
+
+    .remove-btn {
+        padding: 5px 12px;
+        font-size: 12px;
+    }
+}
+  
   
   

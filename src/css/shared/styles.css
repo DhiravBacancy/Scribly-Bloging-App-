@@ -87,8 +87,48 @@ footer {
 }
 
 /* Responsive Utilities */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
+        max-width: 540px;
         padding: 0 10px;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    .form-control {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        font-size: 0.85rem;
+    }
+
+    .form-control {
+        padding: 5px 8px;
+        font-size: 0.85rem;
     }
 } 
