@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Detail | Scribly</title>
+  <link rel="stylesheet" href="../css/shared/styles.css">
+  <link rel="stylesheet" href="../css/pages/blog-detail.css">
+  <link rel="stylesheet" href="../css/pages/dashboard.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-content">
+      <div class="app-name">
+        <span>Scribly</span>
+      </div>
+      
+      <div class="search-bar">
+        <!-- Search bar can be added here if needed -->
+      </div>
+      
+      <div class="user-actions">
+        <button id="writeBlogBtn" class="write-btn">
+          <span class="write-icon">✏️</span>
+          <span>Write</span>
+        </button>
+        
+        <div class="avatar-container">
+          <img src="https://ui-avatars.com/api/?name=User&background=B38B6D&color=fff" 
+               alt="User Avatar" 
+               class="avatar" 
+               id="userAvatar">
+          
+               <div class="dropdown-menu" id="userDropdown">
+                <ul>
+                  <li><a href="#" id="logoutBtn" class="dropdown-item">Logout</a></li>
+                </ul>
+              </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="blog-detail-container">
+      <div class="blog-detail-card">
+        <div class="blog-header">
+          <h1 class="blog-title" id="detail-title">Loading...</h1>
+          <div class="blog-meta">
+            <span class="blog-date" id="detail-date"></span>
+            <span class="comment-count" id="comment-count">0 comments</span>
+          </div>
+        </div>
+        
+        <div class="blog-author" id="detail-author">
+          <img src="" class="author-avatar" id="detail-avatar" alt="Author Avatar">
+          <span class="author-name" id="detail-author-name"></span>
+        </div>
+        
+        <div class="blog-image-container">
+          <img src="" class="blog-detail-image" id="detail-image" alt="Blog Image">
+        </div>
+        
+        <div class="blog-detail-content" id="detail-content"></div>
+        
+        <div class="comments-section">
+          <h3 class="comments-title">Comments</h3>
+          
+          <div class="comments-list" id="comments-list">
+            <!-- Comments will be dynamically inserted here -->
+          </div>
+          
+          <div class="add-comment">
+            <textarea id="new-comment" placeholder="Share your thoughts..." rows="3"></textarea>
+            <button id="submit-comment" class="comment-button">Post Comment</button>
+          </div>
+        </div>
+        
+        <a href="../pages/dashboard.html" class="back-button">← Back to Blogs</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© Scribly. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/services/auth.js"></script>
+  <script src="../js/services/blog.js"></script>
+  <script src="../js/pages/blog-detail.js"></script>
+</body>
+</html>
